@@ -1,0 +1,4 @@
+[submodule "tactile_robotics/labs"]
+	path = tactile_robotics/labs
+	url = https://github.com/mariorch22/sztu-tactile-robotics.git
+	branch = semester

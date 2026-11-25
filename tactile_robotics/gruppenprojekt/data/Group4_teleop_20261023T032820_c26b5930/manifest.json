@@ -1,0 +1,1710 @@
+{
+  "schema_version": 1,
+  "experiment_kind": "fixed_fixture_teleop_alignment",
+  "trajectory_id": "teleop_20261023T032820_c26b5930",
+  "created_utc": "2026-10-23T03:28:20.367271+00:00",
+  "status": "complete",
+  "metadata": {
+    "source_domain": "real_teleoperation",
+    "training_eligible": false,
+    "primary_hand": "left",
+    "motion_enabled": true,
+    "adapter": {
+      "port": "/dev/paxini/LEFT",
+      "resolved_port": "/dev/ttyUSB2",
+      "adapter_serial": "CPDXb114J19",
+      "vid": "067b",
+      "pid": "23a3"
+    },
+    "adapters": {
+      "left": {
+        "port": "/dev/paxini/LEFT",
+        "resolved_port": "/dev/ttyUSB2",
+        "adapter_serial": "CPDXb114J19",
+        "vid": "067b",
+        "pid": "23a3"
+      },
+      "right": {
+        "port": "/dev/paxini/RIGHT",
+        "resolved_port": "/dev/ttyUSB1",
+        "adapter_serial": "AOCPb114J19",
+        "vid": "067b",
+        "pid": "23a3"
+      }
+    },
+    "selected_hand_sides": [
+      "left",
+      "right"
+    ],
+    "hand_config_sha256": {
+      "left": "7dc7a4a75fd5eeecdab9fe23a817eb00d966636f3fe347e1519cc5cb9007673f",
+      "right": "7dc7a4a75fd5eeecdab9fe23a817eb00d966636f3fe347e1519cc5cb9007673f"
+    },
+    "selected_arm_sides": [
+      "left",
+      "right"
+    ],
+    "effective_connection": {
+      "hand_side": "left",
+      "hand_sides": [
+        "left",
+        "right"
+      ],
+      "arm_ips": {
+        "left": "192.168.20.2",
+        "right": "192.168.20.3"
+      }
+    },
+    "hardware_config": {
+      "version": 1,
+      "selected_hand": "left",
+      "hands": {
+        "left": {
+          "port": "/dev/paxini/LEFT",
+          "adapter_serial": "CPDXb114J19",
+          "calibration_file": null,
+          "verified_taxel_mask_file": null
+        },
+        "right": {
+          "port": "/dev/paxini/RIGHT",
+          "adapter_serial": "AOCPb114J19",
+          "calibration_file": null,
+          "verified_taxel_mask_file": null
+        }
+      },
+      "arms": {
+        "left": {
+          "enabled": true,
+          "ip": "192.168.20.2"
+        },
+        "right": {
+          "enabled": true,
+          "ip": "192.168.20.3"
+        }
+      },
+      "hand_sample_period_ms": 100,
+      "installation_calibrated": false
+    },
+    "config_sha256": "7dc7a4a75fd5eeecdab9fe23a817eb00d966636f3fe347e1519cc5cb9007673f",
+    "arm_connections_at_start": {
+      "left": {
+        "joint_rad": [
+          -2.1465663688396592,
+          0.8236760140935875,
+          1.1179127215077767,
+          2.1889909020403495,
+          -2.0455872837683025,
+          -1.675682175791504,
+          0.8945746928595684
+        ],
+        "tcp_vendor_pose": [
+          0.16504753312212553,
+          0.5851155101412393,
+          0.20123528248560738,
+          1.1617718638217678,
+          0.46503561549334654,
+          0.7650811373358314
+        ],
+        "age_ms": 24.579221,
+        "fresh": true,
+        "connected": true,
+        "mode": "cart_impedance",
+        "brake_released": true,
+        "state": 0,
+        "state_name": "running",
+        "state_age_ms": 132.7,
+        "error_code": null,
+        "emergency_stop": false,
+        "collision": false,
+        "snapshot_age_ms": 4.9,
+        "q_deg": [
+          -123.0,
+          47.2,
+          64.1,
+          125.4,
+          -117.2,
+          -96.0,
+          51.3
+        ],
+        "tcp_xyz_m": [
+          0.165,
+          0.585,
+          0.201
+        ],
+        "tcp_rotvec_deg": [
+          66.6,
+          26.6,
+          43.8
+        ]
+      },
+      "right": {
+        "joint_rad": [
+          2.1870015205874838,
+          0.8080485838855349,
+          -1.1595215783522272,
+          2.190381072212231,
+          1.9321689470107763,
+          -1.6248690591640942,
+          -0.8392791013433499
+        ],
+        "tcp_vendor_pose": [
+          0.15905020684283558,
+          -0.57813885731096,
+          0.20853133127421863,
+          -1.0377728184808206,
+          0.4864775905787501,
+          -0.7815263891006434
+        ],
+        "age_ms": 29.075937,
+        "fresh": true,
+        "connected": true,
+        "mode": "cart_impedance",
+        "brake_released": true,
+        "state": 0,
+        "state_name": "running",
+        "state_age_ms": 132.7,
+        "error_code": null,
+        "emergency_stop": false,
+        "collision": false,
+        "snapshot_age_ms": 9.4,
+        "q_deg": [
+          125.3,
+          46.3,
+          -66.4,
+          125.5,
+          110.7,
+          -93.1,
+          -48.1
+        ],
+        "tcp_xyz_m": [
+          0.159,
+          -0.578,
+          0.209
+        ],
+        "tcp_rotvec_deg": [
+          -59.5,
+          27.9,
+          -44.8
+        ]
+      }
+    },
+    "software_sha256": {
+      "packages/lerobot_teleoperator_quest/lerobot_teleoperator_quest/alignment/hardware.py": "01d5c840b0aa3841814289eb079a242eec2da5baafd30962be5843b637187aaa",
+      "packages/lerobot_robot_dexh13/native/dexh13_observer.cpp": "3b3188f3fd152fab50e6519960020dae852770b4d9163823968c0284bd4a2233",
+      "packages/lerobot_teleoperator_quest/lerobot_teleoperator_quest/alignment/live_controller.py": "2a0ad43cadc73c826d8bdaf401d31c9c10ff1b4db6b9f36a55cf289af8778dbf",
+      "packages/lerobot_teleoperator_quest/lerobot_teleoperator_quest/alignment/live_runtime.py": "feefb0daeb8f5bf7af1a105c3a5abc1adf9c0a812a04d32fce267dae69ec0612",
+      "packages/lerobot_teleoperator_quest/lerobot_teleoperator_quest/alignment/execution.py": "82a698ff395e6c4200403f9e8cbf1c8a9fd3956267afca3d43041ea60e7c784d",
+      "packages/lerobot_robot_dexh13/native/dexh13_alignment_bridge.cpp": "1d98cf8fc382e4d33d643cd766c46afa48843f84342d309a1e9866fbc295c9c0",
+      "packages/lerobot_robot_dexh13/native/build/dexh13_alignment_bridge": "ecf88805a683750028c94bac9d31baff5fe89c5ec25c0b0aa59ac656d2077413"
+    },
+    "tactile_storage": "unscaled signed int32 SDK counts",
+    "tactile_unit_vendor_claim": "SDK header getFingerTactile/Detail says 0.1 N per count; not physically calibrated",
+    "taxel_mask_meaning": "verified enabled/healthy taxels AND connected nonfault sample; all false until supplied",
+    "taxel_order": "SDK return order; geometric mapping not yet verified",
+    "arm_joint_units": "rad",
+    "tcp_frame": "each arm controller base; xyz(m)+rotation vector(rad), not shared world or palm",
+    "robot_palm_pose_valid": false,
+    "fixture_relative_pose_valid": false,
+    "hardware_sample_timestamp_available": false,
+    "time_contract": "hand SDK query begin/end and arm callback receipt on host monotonic clock",
+    "motion_config_sha256": "2f1e074e3423d9b07775ab524eb606da4ce4c8799ff1adde825a11f189b47c56",
+    "hand_home_policy": "sdk_zero",
+    "hand_home_active_rad": {
+      "left": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "hand_zero_measured_verified": {
+      "left": true,
+      "right": true
+    },
+    "hand_zero_tolerance_deg": 2.0,
+    "hand_zero_timeout_s": 30.0,
+    "hand_zero_confirm_samples": 3,
+    "authorization_profile": "desktop_prearm_enable_after_home_or_hardware_recovery",
+    "motion_reference_source": "current_measurement",
+    "motion_timing_schema": 1,
+    "arm_control_mode": "cart_impedance",
+    "posture_policy": "home_nearby",
+    "posture_parameters": {
+      "posture_policy": "home_nearby",
+      "posture_joint_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        2.0
+      ],
+      "posture_joint_deadband_deg": 2.0,
+      "posture_home_height_weight": 25.0,
+      "posture_ceiling_weight": 400.0,
+      "posture_manipulability_full": 0.03,
+      "posture_orientation_cost_min": 0.08,
+      "posture_diagnostics": true,
+      "orientation_cost": 0.5,
+      "elbow_height_ceiling": 0.563,
+      "elbow_height_deadband": 0.02,
+      "elbow_nullspace_gain": 2.0,
+      "elbow_nullspace_max_vel": 0.1,
+      "nullspace_tcp_pos_tol": 0.0001,
+      "nullspace_tcp_ang_deg": 0.05,
+      "nullspace_escape_pos_tol": 0.002,
+      "nullspace_escape_ang_deg": 0.5,
+      "nullspace_escape_stuck_s": 0.3,
+      "lm_damping": 1.0,
+      "ik_damping": 0.001,
+      "collision_min_dist": 0.02,
+      "collision_detect_dist": 0.025,
+      "hand_table_collision_min_dist": 0.0,
+      "hand_table_collision_detect_dist": 0.01,
+      "hand_collision_min_dist": 0.0,
+      "hand_collision_detect_dist": 0.01,
+      "hand_self_collision_min_dist": 0.0,
+      "hand_self_collision_detect_dist": 0.02,
+      "nullspace_height_ceiling_enabled": true,
+      "nullspace_height_ceiling_m": 0.5,
+      "nullspace_height_floor_enabled": true,
+      "nullspace_height_floor_m": 0.15,
+      "nullspace_home_height_linear_enabled": true,
+      "nullspace_home_height_linear_weight": 30.0,
+      "nullspace_home_height_linear_deadband_m": 0.02,
+      "arm_collision_enabled": true,
+      "hand_table_collision_enabled": true,
+      "hand_external_collision_enabled": true,
+      "manipulability_warn": 0.02,
+      "manipulability_freeze": 0.008,
+      "max_tcp_vel": 0.5,
+      "max_tcp_ang_deg": 90.0,
+      "home_tcp_vel": 0.08,
+      "home_tcp_ang_deg": 18.0
+    },
+    "hand_observation_tolerance_deg": 3.0,
+    "clamp_hand_observations_to_model": true,
+    "hand_observation_representation": "temporary CAD clamp of model joints; raw SDK joint observations retained",
+    "calibration_sha256": {
+      "left": null,
+      "right": null
+    },
+    "frame_coupling": "arm and finger targets share XR sequence/session/generation; per-SDK timing retained",
+    "actual_palm_pose_valid": false,
+    "teleoperation_session_id": "motion_939e0582c028479890ad0546e58d1093",
+    "recording_segment": 1,
+    "recording_begin_monotonic_ns": 681322711499175,
+    "operator_missing_hand_storage": "zero-filled fields only where hand_tracking_valid is false; not a pose",
+    "kinematic_model": {
+      "mjcf_sha256": "f3da48bf9a5ee122a2658baff0feff4e59bcb352b816fa92f05a9ba4d8e3589f",
+      "source_commit": "f9afdd2fc0d85c1a740ed095d3074297e8ff0289",
+      "manifest": {
+        "sdk_repository": "kiramint/Dexman_ROS2_SDK",
+        "sdk_commit": "f9afdd2fc0d85c1a740ed095d3074297e8ff0289",
+        "urdf_sha256": "327f24a434bd12389bbdddd8c493dd81922d14d19016b6303b75c7d1f1a93155",
+        "mjcf_sha256": "f3da48bf9a5ee122a2658baff0feff4e59bcb352b816fa92f05a9ba4d8e3589f",
+        "arm_joints": 14,
+        "logical_hand_joints_per_side": 16,
+        "active_hand_motors_per_side": 13,
+        "passive_hand_logical_indices": [
+          3,
+          7,
+          11
+        ],
+        "tactile_links_per_side": 11,
+        "world_root_pos": "0 0 0.75",
+        "control_tcp": "left_palm/right_palm at source URDF palm-link origins; no legacy TCP sites",
+        "installation_source": "source URDF calibrated bases and DH13 mounts; no manual CAD reconstruction",
+        "physical_installation_verified": false,
+        "ik_collision_policy": "source arm/sensor meshes: 0.05/0.08 m; hand vs table: 0/0.01 m; hand vs opposite arm/opposite hand: 0.01/0.04 m; same-hand meshes excluded including fingers, palm/flange/camera and own link1-6; same-side link7/sensor vs flange excluded; objects/cables/people not modeled",
+        "fixed_links_with_invalid_vendor_inertia_omitted": [
+          "left_base_link",
+          "right_base_link",
+          "right_camera_link"
+        ],
+        "meshes": {
+          "sdk_f61d41ff7c698c8a.obj": {
+            "source": "package://dexman_description/meshes/base_link.STL",
+            "source_sha256": "1795a901204dfd8545956508906532b98248e9d9c0c5a0f82e5c5e5d824b81ee",
+            "sha256": "71ca4a868d39c0643a64836a3b2c19222b9c2e66ef4c93ae801a91ae0926a2f4",
+            "encoding": "large_stl_to_obj_no_decimation"
+          },
+          "sdk_327f67b507da4542.stl": {
+            "source": "package://dexman_description/meshes/base_link_collision.STL",
+            "source_sha256": "62b1407f2d60ad356202a471357dfaf43ff2f0e7efe5dfba8f9e1e958f6a7c60",
+            "sha256": "62b1407f2d60ad356202a471357dfaf43ff2f0e7efe5dfba8f9e1e958f6a7c60",
+            "encoding": "binary_stl"
+          },
+          "sdk_24054d58421b7e6f.stl": {
+            "source": "package://diana_description/meshes/base_link.STL",
+            "source_sha256": "a28dd654809ec7c449ef7340731975b709703fc89ef2a6ac314252dc56b20784",
+            "sha256": "a28dd654809ec7c449ef7340731975b709703fc89ef2a6ac314252dc56b20784",
+            "encoding": "binary_stl"
+          },
+          "sdk_b6f4550b2a59700d.stl": {
+            "source": "package://diana_description/meshes/link1.STL",
+            "source_sha256": "811375ea5a7a1106885416ee93fbec1dd15ff58f96648d99a8f87d9d1301cb00",
+            "sha256": "811375ea5a7a1106885416ee93fbec1dd15ff58f96648d99a8f87d9d1301cb00",
+            "encoding": "binary_stl"
+          },
+          "sdk_c639d082fa0e7058.stl": {
+            "source": "package://diana_description/meshes/link2.STL",
+            "source_sha256": "746a5cb6ed1873be5641c51f9eab917bef15232b5aa178c07ea3c410c78aad29",
+            "sha256": "746a5cb6ed1873be5641c51f9eab917bef15232b5aa178c07ea3c410c78aad29",
+            "encoding": "binary_stl"
+          },
+          "sdk_ace37673dbdc4c8d.stl": {
+            "source": "package://diana_description/meshes/link3.STL",
+            "source_sha256": "21c8b89f2c8dc17ae872c647fc07529f1b4eb239f93cbf0a0ae08f7b9a5a3eed",
+            "sha256": "21c8b89f2c8dc17ae872c647fc07529f1b4eb239f93cbf0a0ae08f7b9a5a3eed",
+            "encoding": "binary_stl"
+          },
+          "sdk_615526a37334c603.stl": {
+            "source": "package://diana_description/meshes/link4.STL",
+            "source_sha256": "28e8687580540ffb9f9b7b6200ad52711b01d92b64ad8553b18c160988c3d12a",
+            "sha256": "28e8687580540ffb9f9b7b6200ad52711b01d92b64ad8553b18c160988c3d12a",
+            "encoding": "binary_stl"
+          },
+          "sdk_329af693f667a221.stl": {
+            "source": "package://diana_description/meshes/link5.STL",
+            "source_sha256": "a9a77032873a82edc084ef14b5a4c0807e973c52a393a224cc771e3d598cd451",
+            "sha256": "a9a77032873a82edc084ef14b5a4c0807e973c52a393a224cc771e3d598cd451",
+            "encoding": "binary_stl"
+          },
+          "sdk_b0bf3a8d8fc0c250.stl": {
+            "source": "package://diana_description/meshes/link6.STL",
+            "source_sha256": "56544444f5d2fbb62582e751371c8540819c9abf53ac8c465e735de1ca019132",
+            "sha256": "56544444f5d2fbb62582e751371c8540819c9abf53ac8c465e735de1ca019132",
+            "encoding": "binary_stl"
+          },
+          "sdk_7c453c71e9c93606.stl": {
+            "source": "package://diana_description/meshes/link7.STL",
+            "source_sha256": "21002e85c41e913f9def1be1b6b42bb4299d268111fc26c177193f8307db0832",
+            "sha256": "21002e85c41e913f9def1be1b6b42bb4299d268111fc26c177193f8307db0832",
+            "encoding": "binary_stl"
+          },
+          "sdk_0f0866c470060dae.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_sensor_link.STL",
+            "source_sha256": "d10c6634c20794d1fe8e4f1177c39023f847baa75e09bf902770b6d5efbe0c0e",
+            "sha256": "d10c6634c20794d1fe8e4f1177c39023f847baa75e09bf902770b6d5efbe0c0e",
+            "encoding": "binary_stl"
+          },
+          "sdk_a78a7adcbd674fdc.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_flange_link.STL",
+            "source_sha256": "6bde68d5158c98640f7028170b9ac12712c26d6b614908d8c5defd0b91f40254",
+            "sha256": "6bde68d5158c98640f7028170b9ac12712c26d6b614908d8c5defd0b91f40254",
+            "encoding": "binary_stl"
+          },
+          "sdk_b18c085e14007bf9.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_palm_link.STL",
+            "source_sha256": "ab6d5be2cce8da00a3ab555d2abb32660b195656316db27d71d850da556589d3",
+            "sha256": "ab6d5be2cce8da00a3ab555d2abb32660b195656316db27d71d850da556589d3",
+            "encoding": "binary_stl"
+          },
+          "sdk_3871cfd1bc661990.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_link_0.STL",
+            "source_sha256": "e7dc57c3644238895e609bbfc73cb4c9dbae5051ecb89174803d08f1590c0ba7",
+            "sha256": "e7dc57c3644238895e609bbfc73cb4c9dbae5051ecb89174803d08f1590c0ba7",
+            "encoding": "binary_stl"
+          },
+          "sdk_5a24313013b69ed6.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_link_1.STL",
+            "source_sha256": "587aceafdec3aa311e2a3459a9ac273e637f18e7c05ce70757662d9fc2e7f5ae",
+            "sha256": "587aceafdec3aa311e2a3459a9ac273e637f18e7c05ce70757662d9fc2e7f5ae",
+            "encoding": "binary_stl"
+          },
+          "sdk_9963884bc490f51b.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_link_2.STL",
+            "source_sha256": "8b884d95cfdbf9a3897264db50972a0f997732645114a383b7e4aba7d1f4cfa8",
+            "sha256": "8b884d95cfdbf9a3897264db50972a0f997732645114a383b7e4aba7d1f4cfa8",
+            "encoding": "binary_stl"
+          },
+          "sdk_95355b325f74669d.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_link_3.STL",
+            "source_sha256": "4582d3de15630885ceede40d761dc996e555a9fb99eb169f3b89c206f54435d4",
+            "sha256": "4582d3de15630885ceede40d761dc996e555a9fb99eb169f3b89c206f54435d4",
+            "encoding": "binary_stl"
+          },
+          "sdk_51dfc868b4616506.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_tactile_link_2.STL",
+            "source_sha256": "0e04bffa501d812243c18ebdf418549b12d7e190c6d103fa5531b439cca3b6b4",
+            "sha256": "0e04bffa501d812243c18ebdf418549b12d7e190c6d103fa5531b439cca3b6b4",
+            "encoding": "binary_stl"
+          },
+          "sdk_c70f39f2ec527de4.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_tactile_link_1.STL",
+            "source_sha256": "1a49d4473d1e78b70870ac3f0b97b7e86f2633ca70e1d8fd587255923877a526",
+            "sha256": "1a49d4473d1e78b70870ac3f0b97b7e86f2633ca70e1d8fd587255923877a526",
+            "encoding": "binary_stl"
+          },
+          "sdk_ffeb2c7275e7d73a.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_index_tactile_link_0.STL",
+            "source_sha256": "8d5ecec18254adb8cd04c11eed1f231d3be30a9615442948c8448fbffc69d958",
+            "sha256": "8d5ecec18254adb8cd04c11eed1f231d3be30a9615442948c8448fbffc69d958",
+            "encoding": "binary_stl"
+          },
+          "sdk_b6559e2bbf1860c7.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_link_0.STL",
+            "source_sha256": "eaf2c018bfa73009877ff18379a486da942717fb91eabda7e2e838a2a9c7c3d2",
+            "sha256": "eaf2c018bfa73009877ff18379a486da942717fb91eabda7e2e838a2a9c7c3d2",
+            "encoding": "binary_stl"
+          },
+          "sdk_949a231ea3d319bc.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_link_1.STL",
+            "source_sha256": "058c3c8017bfab4a8d55cd4850adcdd65841927b4bccad2b6db28fe16a17a455",
+            "sha256": "058c3c8017bfab4a8d55cd4850adcdd65841927b4bccad2b6db28fe16a17a455",
+            "encoding": "binary_stl"
+          },
+          "sdk_e6f80113331d8001.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_link_2.STL",
+            "source_sha256": "b95716195153e500d2f0bb04e6ef64b084a8a816aa8d0117c9c640c6ba6c6ea9",
+            "sha256": "b95716195153e500d2f0bb04e6ef64b084a8a816aa8d0117c9c640c6ba6c6ea9",
+            "encoding": "binary_stl"
+          },
+          "sdk_13d16a7cc9a6ee60.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_link_3.STL",
+            "source_sha256": "bdf31a9adb9bb54256c3d72b0cf1f48580850b3e8bb2f8f997e33202031fa800",
+            "sha256": "bdf31a9adb9bb54256c3d72b0cf1f48580850b3e8bb2f8f997e33202031fa800",
+            "encoding": "binary_stl"
+          },
+          "sdk_a863794a6683deda.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_tactile_link_2.STL",
+            "source_sha256": "41e9451a2629967a97d0162ce7940635320c8775a20b21460aff56ae57eb7ab7",
+            "sha256": "41e9451a2629967a97d0162ce7940635320c8775a20b21460aff56ae57eb7ab7",
+            "encoding": "binary_stl"
+          },
+          "sdk_b838065bf6708eea.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_tactile_link_1.STL",
+            "source_sha256": "8135e3a4a282cc43ab8a5d2183f73b3acf7b47423aab9e030ab58a9129dd5904",
+            "sha256": "8135e3a4a282cc43ab8a5d2183f73b3acf7b47423aab9e030ab58a9129dd5904",
+            "encoding": "binary_stl"
+          },
+          "sdk_0504b8c2e18feb6e.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_middle_tactile_link_0.STL",
+            "source_sha256": "cc2d042bd2dd6c43ef5579c4950cf3ce48b4a2735f50f42f43d72c3ab32a7117",
+            "sha256": "cc2d042bd2dd6c43ef5579c4950cf3ce48b4a2735f50f42f43d72c3ab32a7117",
+            "encoding": "binary_stl"
+          },
+          "sdk_314b64de6b26c03c.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_link_0.STL",
+            "source_sha256": "4b63275cc6779741318b9e367b7db62864640a5c21787c9b842de500420a2cf6",
+            "sha256": "4b63275cc6779741318b9e367b7db62864640a5c21787c9b842de500420a2cf6",
+            "encoding": "binary_stl"
+          },
+          "sdk_26eca3e86fdd5101.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_link_1.STL",
+            "source_sha256": "4f0189348bb538485faf2d1f67daa3361157ac2641a2a487ab3c9efd370808ca",
+            "sha256": "4f0189348bb538485faf2d1f67daa3361157ac2641a2a487ab3c9efd370808ca",
+            "encoding": "binary_stl"
+          },
+          "sdk_71aef4ee9cf0e498.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_link_2.STL",
+            "source_sha256": "8a2d251d646a3c22b3c96feb31987a0db1e71b289090c36faa1f34a51c821bc3",
+            "sha256": "8a2d251d646a3c22b3c96feb31987a0db1e71b289090c36faa1f34a51c821bc3",
+            "encoding": "binary_stl"
+          },
+          "sdk_25a277315c5678eb.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_link_3.STL",
+            "source_sha256": "293e8ed3f358ad912c55207c7527c0160a6c84ee50d5fabcab8f8e4a43f107a6",
+            "sha256": "293e8ed3f358ad912c55207c7527c0160a6c84ee50d5fabcab8f8e4a43f107a6",
+            "encoding": "binary_stl"
+          },
+          "sdk_bb1d2eb1c17b1ac3.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_tactile_link_2.STL",
+            "source_sha256": "73b99a219df30d16b1e9647bf8583866d79fd80f068d7c82ebf4a86798a29019",
+            "sha256": "73b99a219df30d16b1e9647bf8583866d79fd80f068d7c82ebf4a86798a29019",
+            "encoding": "binary_stl"
+          },
+          "sdk_f972b0789fde6cea.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_tactile_link_1.STL",
+            "source_sha256": "81ad4d4f69b3a52cf4e5fde5e10cb77220340f1d930305cfc48244890412092f",
+            "sha256": "81ad4d4f69b3a52cf4e5fde5e10cb77220340f1d930305cfc48244890412092f",
+            "encoding": "binary_stl"
+          },
+          "sdk_a61915795425ca0f.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_ring_tactile_link_0.STL",
+            "source_sha256": "37c7759174b676ae11c90291eb28d583ebb75973726ce8c492da858a97330890",
+            "sha256": "37c7759174b676ae11c90291eb28d583ebb75973726ce8c492da858a97330890",
+            "encoding": "binary_stl"
+          },
+          "sdk_2a78be5975578147.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_thumb_link_0.STL",
+            "source_sha256": "66e81e408567819cb98fb8b6be86b8031ff7692b7f0a9dcaf7d054825e54b229",
+            "sha256": "66e81e408567819cb98fb8b6be86b8031ff7692b7f0a9dcaf7d054825e54b229",
+            "encoding": "binary_stl"
+          },
+          "sdk_c9fee2c91d4179a4.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_thumb_link_1.STL",
+            "source_sha256": "d4d70962eb7f43a25f5e06dace05d8e4f18a64bfeb1c5eb7e45d8fca2a92f222",
+            "sha256": "d4d70962eb7f43a25f5e06dace05d8e4f18a64bfeb1c5eb7e45d8fca2a92f222",
+            "encoding": "binary_stl"
+          },
+          "sdk_3af85977fe3158cc.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_thumb_link_2.STL",
+            "source_sha256": "a7577447ed925a76d73d41df6f23822cf264d2b954920603171ea8b314f45ada",
+            "sha256": "a7577447ed925a76d73d41df6f23822cf264d2b954920603171ea8b314f45ada",
+            "encoding": "binary_stl"
+          },
+          "sdk_9a59a88abf2c7794.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_thumb_link_3.STL",
+            "source_sha256": "0a17bc3a96512564fbdcb22007d96fac1bbdd249b3a5926559f0544b4b1815ca",
+            "sha256": "0a17bc3a96512564fbdcb22007d96fac1bbdd249b3a5926559f0544b4b1815ca",
+            "encoding": "binary_stl"
+          },
+          "sdk_3e6911909a761074.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_thumb_tactile_link_1.STL",
+            "source_sha256": "e99f7250842f51ac27afef14b72bbd889ac2289f70d1f4be178e944dd1051f5a",
+            "sha256": "e99f7250842f51ac27afef14b72bbd889ac2289f70d1f4be178e944dd1051f5a",
+            "encoding": "binary_stl"
+          },
+          "sdk_750eec70a91c942d.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/left_thumb_tactile_link_0.STL",
+            "source_sha256": "266871a08f449eedd3052f4476d8b4b58897321dd43dbd2355801430873290c6",
+            "sha256": "266871a08f449eedd3052f4476d8b4b58897321dd43dbd2355801430873290c6",
+            "encoding": "binary_stl"
+          },
+          "sdk_9d12e73343160b4f.stl": {
+            "source": "package://dexman_description/meshes/dh13/left/camera_link.STL",
+            "source_sha256": "260c8374a4fa108f6e3d822ace13a53b26516f2bb65ef75f4e8952eff986673d",
+            "sha256": "260c8374a4fa108f6e3d822ace13a53b26516f2bb65ef75f4e8952eff986673d",
+            "encoding": "binary_stl"
+          },
+          "sdk_6c9c144b8c30f36c.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_sensor_link.STL",
+            "source_sha256": "d5029e33dc31f6b0be7bd53308ced19497596a30bb2a7d7593308236c69f06ba",
+            "sha256": "d5029e33dc31f6b0be7bd53308ced19497596a30bb2a7d7593308236c69f06ba",
+            "encoding": "binary_stl"
+          },
+          "sdk_708f480d6640ad99.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_flange_link.STL",
+            "source_sha256": "76c6d88334fd507c24a88c3a291b4f23cc027b92fb827e5932a9445471c914a0",
+            "sha256": "76c6d88334fd507c24a88c3a291b4f23cc027b92fb827e5932a9445471c914a0",
+            "encoding": "binary_stl"
+          },
+          "sdk_fcb61003dd5c344b.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_palm_link.STL",
+            "source_sha256": "2fda7ea4c13e582be9c966231426d76586a543b5f4796a25e3274825142617b3",
+            "sha256": "2fda7ea4c13e582be9c966231426d76586a543b5f4796a25e3274825142617b3",
+            "encoding": "binary_stl"
+          },
+          "sdk_c82e2d7403be4778.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_link_0.STL",
+            "source_sha256": "66f796bfa5176a2d85a9f67efca3ccc4c8c6aa9c4054a915e8523535c94fdb19",
+            "sha256": "66f796bfa5176a2d85a9f67efca3ccc4c8c6aa9c4054a915e8523535c94fdb19",
+            "encoding": "binary_stl"
+          },
+          "sdk_fcbf9ff06134cf21.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_link_1.STL",
+            "source_sha256": "8e0669e5fa882a20b09d9df483cd658a9d2732ff1ae6d4f81b58c803aed6a2cb",
+            "sha256": "8e0669e5fa882a20b09d9df483cd658a9d2732ff1ae6d4f81b58c803aed6a2cb",
+            "encoding": "binary_stl"
+          },
+          "sdk_6edfbddac4ace0c8.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_link_2.STL",
+            "source_sha256": "74e5b4dcc50e7dc4e0541526548203ff2abcbde3bd926eb130c1e0e1c606e049",
+            "sha256": "74e5b4dcc50e7dc4e0541526548203ff2abcbde3bd926eb130c1e0e1c606e049",
+            "encoding": "binary_stl"
+          },
+          "sdk_ef057de9aee33b1b.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_link_3.STL",
+            "source_sha256": "571024b9f00a377d3112449d23b1b88cf83231ca8a483e5f9f39eb5f314d91a4",
+            "sha256": "571024b9f00a377d3112449d23b1b88cf83231ca8a483e5f9f39eb5f314d91a4",
+            "encoding": "binary_stl"
+          },
+          "sdk_d9588a11e1ca0e84.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_tactile_link_2.STL",
+            "source_sha256": "ebf13109cd851ca8637e1f7f1c8a7f552847cb7bf495e82a6554a6d34441caba",
+            "sha256": "ebf13109cd851ca8637e1f7f1c8a7f552847cb7bf495e82a6554a6d34441caba",
+            "encoding": "binary_stl"
+          },
+          "sdk_326107d52356b4d8.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_tactile_link_1.STL",
+            "source_sha256": "fb9bfb5b1c872257ba8dd134d74d7eced70a176254f8ec8d4293e4ef7ed14397",
+            "sha256": "fb9bfb5b1c872257ba8dd134d74d7eced70a176254f8ec8d4293e4ef7ed14397",
+            "encoding": "binary_stl"
+          },
+          "sdk_302116472a887e23.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_index_tactile_link_0.STL",
+            "source_sha256": "6711ad1a1527fd8435185571dc53e8f9d9d0e085af66c9927ad6f45dca40ca07",
+            "sha256": "6711ad1a1527fd8435185571dc53e8f9d9d0e085af66c9927ad6f45dca40ca07",
+            "encoding": "binary_stl"
+          },
+          "sdk_1f543e370e7f17c6.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_link_0.STL",
+            "source_sha256": "3ef9dff3ddbdfb6cf1257b0b3f9dac4bd9c7786e19eb96a184cb3eb06ba33761",
+            "sha256": "3ef9dff3ddbdfb6cf1257b0b3f9dac4bd9c7786e19eb96a184cb3eb06ba33761",
+            "encoding": "binary_stl"
+          },
+          "sdk_74f4404755fe3609.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_link_1.STL",
+            "source_sha256": "1483c2a9ce4b19a5409c9209da80d572e99623f70c0ac6ac62648fa01bb07ea5",
+            "sha256": "1483c2a9ce4b19a5409c9209da80d572e99623f70c0ac6ac62648fa01bb07ea5",
+            "encoding": "binary_stl"
+          },
+          "sdk_0d08590c16ddf32c.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_link_2.STL",
+            "source_sha256": "84d808939107e10d12144eb47ff5719959d6ac2a4c1a027a9f0dff624bada2f7",
+            "sha256": "84d808939107e10d12144eb47ff5719959d6ac2a4c1a027a9f0dff624bada2f7",
+            "encoding": "binary_stl"
+          },
+          "sdk_0563fe5f31955688.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_link_3.STL",
+            "source_sha256": "1e476ebbb85b188b24f58f21d2a86f70361d2db762a34f99210e75b9897f2d91",
+            "sha256": "1e476ebbb85b188b24f58f21d2a86f70361d2db762a34f99210e75b9897f2d91",
+            "encoding": "binary_stl"
+          },
+          "sdk_7840a5b3a960cf38.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_tactile_link_2.STL",
+            "source_sha256": "5bdee9c21eb443f0c74ad4cec86af90c3ee773848cab7a6755355313cee836a5",
+            "sha256": "5bdee9c21eb443f0c74ad4cec86af90c3ee773848cab7a6755355313cee836a5",
+            "encoding": "binary_stl"
+          },
+          "sdk_3e9e080a2c189a3c.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_tactile_link_1.STL",
+            "source_sha256": "ef5f91fb863d93d820b8ee1fec5fb5d38fe3ad7b86ac60803108eccdc0c52498",
+            "sha256": "ef5f91fb863d93d820b8ee1fec5fb5d38fe3ad7b86ac60803108eccdc0c52498",
+            "encoding": "binary_stl"
+          },
+          "sdk_cbd78717f2282a37.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_middle_tactile_link_0.STL",
+            "source_sha256": "fde839cb0bea9e21b4f80515debb117547b9ff75c59abebf85350534f706e36d",
+            "sha256": "fde839cb0bea9e21b4f80515debb117547b9ff75c59abebf85350534f706e36d",
+            "encoding": "binary_stl"
+          },
+          "sdk_cfb2a677e39fc4d1.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_link_0.STL",
+            "source_sha256": "510c9676429da4cdb0f90ae17fef3db1321355f236b8b2dfdcb961c72793ae59",
+            "sha256": "510c9676429da4cdb0f90ae17fef3db1321355f236b8b2dfdcb961c72793ae59",
+            "encoding": "binary_stl"
+          },
+          "sdk_89c226c7827bee4c.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_link_1.STL",
+            "source_sha256": "c1ad75a667cd34b740ac0f9a3e2385c6297987f0f73f95e6fce00b460c731e95",
+            "sha256": "c1ad75a667cd34b740ac0f9a3e2385c6297987f0f73f95e6fce00b460c731e95",
+            "encoding": "binary_stl"
+          },
+          "sdk_e7def315155c61ef.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_link_2.STL",
+            "source_sha256": "8e049efc83b16cd14d1c4b3b93f57789bb7d187f1a180ef3e8a5761069d78e63",
+            "sha256": "8e049efc83b16cd14d1c4b3b93f57789bb7d187f1a180ef3e8a5761069d78e63",
+            "encoding": "binary_stl"
+          },
+          "sdk_24d240c9451da897.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_link_3.STL",
+            "source_sha256": "a3d35c485324fcf0e8e684f2c870ac016fbb73fb7dab467ca641bc0c75a555a1",
+            "sha256": "a3d35c485324fcf0e8e684f2c870ac016fbb73fb7dab467ca641bc0c75a555a1",
+            "encoding": "binary_stl"
+          },
+          "sdk_64d1f0aba54a9a73.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_tactile_link_2.STL",
+            "source_sha256": "47193e2421d0cfede230fedd08ba0f313515170cc87d53428e2a1efef8fa3efe",
+            "sha256": "47193e2421d0cfede230fedd08ba0f313515170cc87d53428e2a1efef8fa3efe",
+            "encoding": "binary_stl"
+          },
+          "sdk_6dd8e703fc1b2427.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_tactile_link_1.STL",
+            "source_sha256": "ad63121bd10b6970901b9b4e76307b3d53d63bca9e44258d2f7b93ea6403a88b",
+            "sha256": "ad63121bd10b6970901b9b4e76307b3d53d63bca9e44258d2f7b93ea6403a88b",
+            "encoding": "binary_stl"
+          },
+          "sdk_c99165185682a944.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_ring_tactile_link_0.STL",
+            "source_sha256": "500c84843b611d531ca3a2ee580511229a9df7205c9a8d28b9ee37ede66477c2",
+            "sha256": "500c84843b611d531ca3a2ee580511229a9df7205c9a8d28b9ee37ede66477c2",
+            "encoding": "binary_stl"
+          },
+          "sdk_78cb6ee06c445173.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_thumb_link_0.STL",
+            "source_sha256": "25d17f988bafa3e2488c6e436d0ca234663265ebca255a75729c4301891bd099",
+            "sha256": "25d17f988bafa3e2488c6e436d0ca234663265ebca255a75729c4301891bd099",
+            "encoding": "binary_stl"
+          },
+          "sdk_c782851db5fbe793.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_thumb_link_1.STL",
+            "source_sha256": "705e2feffa24b9a35b47380c6496187abbebfd47b504c38298bbf87368bc01a4",
+            "sha256": "705e2feffa24b9a35b47380c6496187abbebfd47b504c38298bbf87368bc01a4",
+            "encoding": "binary_stl"
+          },
+          "sdk_8f9ef0eb55fc6249.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_thumb_link_2.STL",
+            "source_sha256": "4d53ee8c0eb88fc838cf573e9e165187d355c14b19c5a6ac49bd44be5f91f779",
+            "sha256": "4d53ee8c0eb88fc838cf573e9e165187d355c14b19c5a6ac49bd44be5f91f779",
+            "encoding": "binary_stl"
+          },
+          "sdk_30e04200a0e02c70.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_thumb_link_3.STL",
+            "source_sha256": "978f923ba76460c86374470bef0325449f50442a89156b2bdb1b980f1a267ca3",
+            "sha256": "978f923ba76460c86374470bef0325449f50442a89156b2bdb1b980f1a267ca3",
+            "encoding": "binary_stl"
+          },
+          "sdk_de5da324df50f566.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_thumb_tactile_link_1.STL",
+            "source_sha256": "ad2d0f32143f7acc83337ccb68d0eee59126847ec3fea15e0f9a2f73f80e2687",
+            "sha256": "ad2d0f32143f7acc83337ccb68d0eee59126847ec3fea15e0f9a2f73f80e2687",
+            "encoding": "binary_stl"
+          },
+          "sdk_459de302265fdd40.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/right_thumb_tactile_link_0.STL",
+            "source_sha256": "56cfec53ae297b225baf26b7b5941cd1accac324860f78ea3bd60dc318edced9",
+            "sha256": "56cfec53ae297b225baf26b7b5941cd1accac324860f78ea3bd60dc318edced9",
+            "encoding": "binary_stl"
+          },
+          "sdk_6435e5df1d3cef77.stl": {
+            "source": "package://dexman_description/meshes/dh13/right/camera_link.STL",
+            "source_sha256": "3ce9b9026eb89e0cca411ca58ad2985ccb3235647aa857360a4da883eccff8b8",
+            "sha256": "3ce9b9026eb89e0cca411ca58ad2985ccb3235647aa857360a4da883eccff8b8",
+            "encoding": "binary_stl"
+          }
+        },
+        "derivations": [
+          {
+            "date": "2026-10-17",
+            "operation": "remove_legacy_tcp_sites",
+            "parent_mjcf_sha256": "876c517ff7f6c2fe874e446f94b3e5e5c2ab21ac115e6c4fd1f80b09e350d94b",
+            "removed_sites": [
+              "left_tcp",
+              "right_tcp"
+            ],
+            "geometry_unchanged": true,
+            "description": "Byte-exact deletion of two legacy TCP site lines; all other XML bytes and source assets unchanged."
+          }
+        ]
+      },
+      "hand_pose_source": "actual SDK 16 logical joints, including passive observations; unobserved side not valid"
+    }
+  },
+  "streams": {
+    "operator": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sequence": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "xr_timestamp_ms": {
+          "dtype": "float64",
+          "shape": []
+        },
+        "skeleton_m": {
+          "dtype": "float32",
+          "shape": [
+            2,
+            25,
+            3
+          ]
+        },
+        "wrist_pose": {
+          "dtype": "float64",
+          "shape": [
+            2,
+            7
+          ]
+        },
+        "hand_tracking_valid": {
+          "dtype": "bool",
+          "shape": [
+            2
+          ]
+        },
+        "left_logical_rad": {
+          "dtype": "float64",
+          "shape": [
+            16
+          ]
+        },
+        "hand_logical_rad": {
+          "dtype": "float64",
+          "shape": [
+            16
+          ]
+        }
+      },
+      "rows": 4617,
+      "chunks": [
+        {
+          "file": "operator_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322714729989,
+          "last_timestamp_ns": 681325535955371,
+          "sha256": "6bd18190abb83d0ae06df21f9b8133eef3ecb10a72aad2e17bb04ceab2ea5f57"
+        },
+        {
+          "file": "operator_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681325547542082,
+          "last_timestamp_ns": 681328380724599,
+          "sha256": "7e5a621124a3f1bf99f7426498c15b8782c11d1575c53fb9b427579359440042"
+        },
+        {
+          "file": "operator_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681328393550539,
+          "last_timestamp_ns": 681331223733774,
+          "sha256": "7c729ecb5bfcf9fb00fa5c7080b13421261a32245162ea6bc308e0973c64bfe5"
+        },
+        {
+          "file": "operator_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681331236225391,
+          "last_timestamp_ns": 681334068900936,
+          "sha256": "51872c38ab52dc8d174bf0624456be8ddede85f52ac7d6a8879ab2ee2a5bf48f"
+        },
+        {
+          "file": "operator_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681334080753986,
+          "last_timestamp_ns": 681336913492221,
+          "sha256": "76d0221b51df60634ae5d73c52616e3ec8c9afdbe683f33b0802851d271a5ff4"
+        },
+        {
+          "file": "operator_00005.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681336925818013,
+          "last_timestamp_ns": 681339757070086,
+          "sha256": "4766b9b99503f7151376f09efa73eb5b661c03b7f2a93e19416fc0f4c44f798c"
+        },
+        {
+          "file": "operator_00006.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681339768784653,
+          "last_timestamp_ns": 681342601950871,
+          "sha256": "d0b1eea4cda2a648c10be2cf123f819147a1c565e311953e474894003c7a5c9d"
+        },
+        {
+          "file": "operator_00007.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342613565810,
+          "last_timestamp_ns": 681345447461660,
+          "sha256": "5bce2cebce9ef2f0ff13866d605fcff206830a6440b9707cdcf09e4d2b052598"
+        },
+        {
+          "file": "operator_00008.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681345457413666,
+          "last_timestamp_ns": 681348290023425,
+          "sha256": "aa65cd1bb7b8a968288deccedf13eeaa8b919bca296a981351f007ff71683304"
+        },
+        {
+          "file": "operator_00009.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681348301783170,
+          "last_timestamp_ns": 681351135099012,
+          "sha256": "4d399e70c0d67b8a963d49da075dedaa3735bcf6fe80638ae9f3a17c4783e367"
+        },
+        {
+          "file": "operator_00010.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351146551215,
+          "last_timestamp_ns": 681353980075686,
+          "sha256": "5c41daa64375d63e335d8f37f5aed43843da62cd987e32989a21afbd2443f346"
+        },
+        {
+          "file": "operator_00011.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681353990722671,
+          "last_timestamp_ns": 681356826772358,
+          "sha256": "9eabde0975ec2dc72afa34cb4437ca56131187d08248745038727226194109e2"
+        },
+        {
+          "file": "operator_00012.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681356835733655,
+          "last_timestamp_ns": 681359670411944,
+          "sha256": "87c0208879e6058171cc59c085dc78e8b89a6d36372b0ddb62014ea67290c24f"
+        },
+        {
+          "file": "operator_00013.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681359679455762,
+          "last_timestamp_ns": 681362513250373,
+          "sha256": "943909d0d3efadf8590634f5ce16d1a08342ecec4e6b59d60029a973c6dc5ed9"
+        },
+        {
+          "file": "operator_00014.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681362523814039,
+          "last_timestamp_ns": 681365356573740,
+          "sha256": "55b25340a305d739095acf33f673d2f4c0960ae00438618aaaf52d0058cc6235"
+        },
+        {
+          "file": "operator_00015.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681365368010434,
+          "last_timestamp_ns": 681368201730269,
+          "sha256": "e2daa36ae1880704a8b0308ea8245dc557c38f1b4b43a085378dfb5b381b0f00"
+        },
+        {
+          "file": "operator_00016.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681368213238868,
+          "last_timestamp_ns": 681371045949485,
+          "sha256": "e033938e05682f43ae98cb9e8c4631098f18701b67a520dbf11d0c9da67bc080"
+        },
+        {
+          "file": "operator_00017.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681371060513198,
+          "last_timestamp_ns": 681373889712265,
+          "sha256": "cbeb6b5a3596148f2dca697d6a4d14e625d17cb2a1812a5792cce318bcc7bdae"
+        },
+        {
+          "file": "operator_00018.npz",
+          "rows": 9,
+          "first_timestamp_ns": 681373902064908,
+          "last_timestamp_ns": 681373990185701,
+          "sha256": "9f76a3a8dadea79fb9f56738f98ccee8b3bdf9bdc3d5949871e24fecc2629e95"
+        }
+      ]
+    },
+    "left_arm_state": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "actual_joint_rad": {
+          "dtype": "float64",
+          "shape": [
+            7
+          ]
+        },
+        "actual_joint_velocity_rad_s": {
+          "dtype": "float64",
+          "shape": [
+            7
+          ]
+        },
+        "tcp_vendor_pose": {
+          "dtype": "float64",
+          "shape": [
+            6
+          ]
+        },
+        "actual_state_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "collision": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "palm_pose_valid": {
+          "dtype": "bool",
+          "shape": []
+        }
+      },
+      "rows": 1431,
+      "chunks": [
+        {
+          "file": "left_arm_state_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322686949728,
+          "last_timestamp_ns": 681331966993517,
+          "sha256": "7f5c38f68b5b87d6f3d6f9f087eadf085b388cc5cf278e0ffe2e554fa58044bf"
+        },
+        {
+          "file": "left_arm_state_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681332006981202,
+          "last_timestamp_ns": 681342027340572,
+          "sha256": "765a1bd74aad731cedda65a6b1df9f453dd9112fa7ac82e834238fbb475bbad0"
+        },
+        {
+          "file": "left_arm_state_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342076966086,
+          "last_timestamp_ns": 681351297170655,
+          "sha256": "088fb27b82ead7494f3a505768513dec31bd445ffbd6a9313a60d260ebd3177a"
+        },
+        {
+          "file": "left_arm_state_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351337488557,
+          "last_timestamp_ns": 681360147039765,
+          "sha256": "add7813ec68240d749242b1ba8d22983d53277fcd6fb62d83d39a0e7a4bd7e58"
+        },
+        {
+          "file": "left_arm_state_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681360177063420,
+          "last_timestamp_ns": 681368747188350,
+          "sha256": "da0eb6a5ab7d191388875b8782b50dd38e541731f8f62891dbd24e2159aeddf2"
+        },
+        {
+          "file": "left_arm_state_00005.npz",
+          "rows": 151,
+          "first_timestamp_ns": 681368777672479,
+          "last_timestamp_ns": 681373957207230,
+          "sha256": "f2a4263b4683242e9143b6f4acb0b3c43819379954f096459853e5edf1bd9bbb"
+        }
+      ]
+    },
+    "right_arm_state": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "actual_joint_rad": {
+          "dtype": "float64",
+          "shape": [
+            7
+          ]
+        },
+        "actual_joint_velocity_rad_s": {
+          "dtype": "float64",
+          "shape": [
+            7
+          ]
+        },
+        "tcp_vendor_pose": {
+          "dtype": "float64",
+          "shape": [
+            6
+          ]
+        },
+        "actual_state_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "collision": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "palm_pose_valid": {
+          "dtype": "bool",
+          "shape": []
+        }
+      },
+      "rows": 1431,
+      "chunks": [
+        {
+          "file": "right_arm_state_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322682453012,
+          "last_timestamp_ns": 681331972733468,
+          "sha256": "63cf69026a180db7f0d774ca182efa0cbed51efd97b314870907dce8c28a33d7"
+        },
+        {
+          "file": "right_arm_state_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681332002405592,
+          "last_timestamp_ns": 681342032473999,
+          "sha256": "f2e4f1947f2f1b16a90f7fb8dd23ddce04102fb0a3642de4fdc3521d7d23ae5b"
+        },
+        {
+          "file": "right_arm_state_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342072452612,
+          "last_timestamp_ns": 681351292478753,
+          "sha256": "8a89494986e09e057e81ef772e0871d37b7ffb3fbbd081596b74d69e4ca01206"
+        },
+        {
+          "file": "right_arm_state_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351342482756,
+          "last_timestamp_ns": 681360152624978,
+          "sha256": "30c759a1cdb14f845ab0f5230b2bdbaafa42c175a2a238af66b596cac46e251f"
+        },
+        {
+          "file": "right_arm_state_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681360182778760,
+          "last_timestamp_ns": 681368752699913,
+          "sha256": "10b9d980bfa9f79745156ceef8b8b3f17ea93d8dee77f21198edfaff0f800927"
+        },
+        {
+          "file": "right_arm_state_00005.npz",
+          "rows": 151,
+          "first_timestamp_ns": 681368782546525,
+          "last_timestamp_ns": 681373962574464,
+          "sha256": "4692ec320ab9a38398ed3493c2bba316921d2b21ddfa0e5644694387847272c5"
+        }
+      ]
+    },
+    "left_arm_control": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "target_rad": {
+          "dtype": "float64",
+          "shape": [
+            7
+          ]
+        },
+        "source_sequence": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "generation": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_call_started": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "attempted_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_accepted": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "error": {
+          "dtype": "<U1",
+          "shape": []
+        }
+      },
+      "rows": 1431,
+      "chunks": [
+        {
+          "file": "left_arm_control_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322738283259,
+          "last_timestamp_ns": 681332008278088,
+          "sha256": "b04641a12f7588429829fbd96a384f5ca0188df44244b19e2b548bbd9ed73b21"
+        },
+        {
+          "file": "left_arm_control_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681332055688163,
+          "last_timestamp_ns": 681342079388320,
+          "sha256": "2b2aef657cbee2748f83caceb3472e573f55d37559cf014ced6f0bd6f13356e6"
+        },
+        {
+          "file": "left_arm_control_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342112679587,
+          "last_timestamp_ns": 681351342750897,
+          "sha256": "fca6367f425dc168782de2685d3f1728ec4285d03bd92f0f9446f8823ca31ef3"
+        },
+        {
+          "file": "left_arm_control_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351371849826,
+          "last_timestamp_ns": 681360181453261,
+          "sha256": "cbe5382076406843ce4a38dc278280e2196dc872002c0e4bfd722f9c7909e302"
+        },
+        {
+          "file": "left_arm_control_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681360209255955,
+          "last_timestamp_ns": 681368785515811,
+          "sha256": "50fbd747fec67afe95d83a8375e18d10324f0c90afa84076daa6cc5a3043e4ca"
+        },
+        {
+          "file": "left_arm_control_00005.npz",
+          "rows": 151,
+          "first_timestamp_ns": 681368831179189,
+          "last_timestamp_ns": 681374021332502,
+          "sha256": "e564d7ab52b37934a4300654ba807a3e90f7f51cdad76e6ae29ae1fcbeb33f60"
+        }
+      ]
+    },
+    "right_arm_control": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "target_rad": {
+          "dtype": "float64",
+          "shape": [
+            7
+          ]
+        },
+        "source_sequence": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "generation": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_call_started": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "attempted_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_accepted": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "error": {
+          "dtype": "<U1",
+          "shape": []
+        }
+      },
+      "rows": 1431,
+      "chunks": [
+        {
+          "file": "right_arm_control_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322738314642,
+          "last_timestamp_ns": 681332008308345,
+          "sha256": "6215fd2f7f6cec9f2f0f43d939d927e96180c99f04f41b2f63e5c271b5ddb71d"
+        },
+        {
+          "file": "right_arm_control_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681332055715985,
+          "last_timestamp_ns": 681342079415727,
+          "sha256": "4fd5b1280b3eb53ebadaa247bb83c1fa42a2e241c4b4f72c74fec3b46b872845"
+        },
+        {
+          "file": "right_arm_control_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342112712330,
+          "last_timestamp_ns": 681351342779528,
+          "sha256": "6c2019b5c691e30e2e8ae086ad9931cb0669a6fb93fc70ab159c43e9b4c15205"
+        },
+        {
+          "file": "right_arm_control_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351371887068,
+          "last_timestamp_ns": 681360181490227,
+          "sha256": "6d1d353e050973a569840ed58158195a525de7e66371beef92a8fed9001989f5"
+        },
+        {
+          "file": "right_arm_control_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681360209284597,
+          "last_timestamp_ns": 681368785542957,
+          "sha256": "636963424638bb647c372b47c8c2d485b7477ec836f58392e20d96d1163c8161"
+        },
+        {
+          "file": "right_arm_control_00005.npz",
+          "rows": 151,
+          "first_timestamp_ns": 681368831206506,
+          "last_timestamp_ns": 681374021368309,
+          "sha256": "0ea2777af983bbaee9941c5de5a1f892799dca7a0e60d9df60125f15fcf49ca1"
+        }
+      ]
+    },
+    "left_hand_control": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "target_rad": {
+          "dtype": "float64",
+          "shape": [
+            13
+          ]
+        },
+        "source_sequence": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "generation": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_call_started": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "attempted_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_accepted": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "error": {
+          "dtype": "<U1",
+          "shape": []
+        }
+      },
+      "rows": 1431,
+      "chunks": [
+        {
+          "file": "left_hand_control_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322739047902,
+          "last_timestamp_ns": 681332008833194,
+          "sha256": "1019fba8eb664db2977d144bdf767f3192e1e91bacb2b196347b0e36d3ab0b25"
+        },
+        {
+          "file": "left_hand_control_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681332056280355,
+          "last_timestamp_ns": 681342079941900,
+          "sha256": "98942491c1e549fa0e3bfd376d2bee74cad0b96f2e978967fc7e52ee46abd891"
+        },
+        {
+          "file": "left_hand_control_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342113316938,
+          "last_timestamp_ns": 681351343301145,
+          "sha256": "b884b3538ed0d07085dbfb6355b002566b233b9dfea958c31b1d0bd310467b53"
+        },
+        {
+          "file": "left_hand_control_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351372907120,
+          "last_timestamp_ns": 681360182071485,
+          "sha256": "75feb5135ae90246afa1cfbaa37514b2e58f281e0951175826a0e056a0fea6ed"
+        },
+        {
+          "file": "left_hand_control_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681360209951002,
+          "last_timestamp_ns": 681368786097243,
+          "sha256": "a2cd4528b703beb8dda2d4ca19fbbe4adf81193a4ee12ac07f00ed623572bccf"
+        },
+        {
+          "file": "left_hand_control_00005.npz",
+          "rows": 151,
+          "first_timestamp_ns": 681368831731094,
+          "last_timestamp_ns": 681374021996481,
+          "sha256": "0ff49efba5cbd2c6f0c96ee785d45920b13cc0e6a9364c97cf294250cf9b096c"
+        }
+      ]
+    },
+    "right_hand_control": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "target_rad": {
+          "dtype": "float64",
+          "shape": [
+            13
+          ]
+        },
+        "source_sequence": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "generation": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_call_started": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "attempted_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "sdk_accepted": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "error": {
+          "dtype": "<U1",
+          "shape": []
+        }
+      },
+      "rows": 1431,
+      "chunks": [
+        {
+          "file": "right_hand_control_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322739550684,
+          "last_timestamp_ns": 681332009309818,
+          "sha256": "9cc2d6b7aad19d98fc49934c164cc5df9c15d068635d2cb515c0304e35503c6a"
+        },
+        {
+          "file": "right_hand_control_00001.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681332056766825,
+          "last_timestamp_ns": 681342080754918,
+          "sha256": "37f1731c7c07c39f3abc976f9fc29f749d1822ba59ced81be3e369dfa95fdc95"
+        },
+        {
+          "file": "right_hand_control_00002.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681342113858427,
+          "last_timestamp_ns": 681351343798935,
+          "sha256": "fd8f07c5ec58f298c97527eac3ea4016a4143ae461b2bde76c232019301e65f8"
+        },
+        {
+          "file": "right_hand_control_00003.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681351373529349,
+          "last_timestamp_ns": 681360182881216,
+          "sha256": "95bbad3a4781de0bca1e1b2fcabad55e725fc324d4035575911f090ee6ae5536"
+        },
+        {
+          "file": "right_hand_control_00004.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681360210492702,
+          "last_timestamp_ns": 681368786611781,
+          "sha256": "ce5d0b6959ea365607fe8fd4b8cf1904fa6d4694c5fa6511f31ddb959b9c06fc"
+        },
+        {
+          "file": "right_hand_control_00005.npz",
+          "rows": 151,
+          "first_timestamp_ns": 681368832206479,
+          "last_timestamp_ns": 681374022552996,
+          "sha256": "046fd72af76a31e92df3cb61fa484e3d54c3f9491da85efdbb7d7d7493e451cf"
+        }
+      ]
+    },
+    "right_hand_state": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "hand_side": {
+          "dtype": "<U5",
+          "shape": []
+        },
+        "actual_logical_rad": {
+          "dtype": "float64",
+          "shape": [
+            16
+          ]
+        },
+        "actual_state_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "query_begin_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "motor_enabled": {
+          "dtype": "bool",
+          "shape": []
+        }
+      },
+      "rows": 458,
+      "chunks": [
+        {
+          "file": "right_hand_state_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322610871783,
+          "last_timestamp_ns": 681351670180151,
+          "sha256": "ca0b29a6249dfef90952ac43ac9faf738995e8e9700dd91b9d6e5545623ccb15"
+        },
+        {
+          "file": "right_hand_state_00001.npz",
+          "rows": 202,
+          "first_timestamp_ns": 681351774525862,
+          "last_timestamp_ns": 681373848983050,
+          "sha256": "d34ef3b0ef4a04f707bdde00828235ffa2d0caac2d854ebe37fee0638af9ea1f"
+        }
+      ]
+    },
+    "right_tactile": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "hand_side": {
+          "dtype": "<U5",
+          "shape": []
+        },
+        "taxel_raw": {
+          "dtype": "int32",
+          "shape": [
+            1140,
+            3
+          ]
+        },
+        "taxel_valid_mask": {
+          "dtype": "bool",
+          "shape": [
+            1140
+          ]
+        },
+        "sensor_summary_raw": {
+          "dtype": "int32",
+          "shape": [
+            11,
+            3
+          ]
+        },
+        "packet_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "sample_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "query_begin_ns": {
+          "dtype": "int64",
+          "shape": []
+        }
+      },
+      "rows": 458,
+      "chunks": [
+        {
+          "file": "right_tactile_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322626892762,
+          "last_timestamp_ns": 681351686311953,
+          "sha256": "99fb5358640280c9ce7d3df4b61e0748e3d2f77a7035aad55573d971fc6cecc4"
+        },
+        {
+          "file": "right_tactile_00001.npz",
+          "rows": 202,
+          "first_timestamp_ns": 681351790606260,
+          "last_timestamp_ns": 681373865151676,
+          "sha256": "8324937f4004df374b2690e152c275b399987ab7e5bf7f8ba01a45ce3a3e46b6"
+        }
+      ]
+    },
+    "left_hand_state": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "hand_side": {
+          "dtype": "<U4",
+          "shape": []
+        },
+        "actual_logical_rad": {
+          "dtype": "float64",
+          "shape": [
+            16
+          ]
+        },
+        "actual_state_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "query_begin_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "motor_enabled": {
+          "dtype": "bool",
+          "shape": []
+        }
+      },
+      "rows": 458,
+      "chunks": [
+        {
+          "file": "left_hand_state_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322693635790,
+          "last_timestamp_ns": 681351755836835,
+          "sha256": "33ccc3bea663d21f3312398e7583569c44e5dec3c43d2d70cd029eaefd13ec83"
+        },
+        {
+          "file": "left_hand_state_00001.npz",
+          "rows": 202,
+          "first_timestamp_ns": 681351865600741,
+          "last_timestamp_ns": 681373965958128,
+          "sha256": "61171683205ab0b9957d0f04004ae3f9400fc718bf601d9c26d0ef5e28afd917"
+        }
+      ]
+    },
+    "left_tactile": {
+      "fields": {
+        "timestamp_ns": {
+          "dtype": "int64",
+          "shape": []
+        },
+        "hand_side": {
+          "dtype": "<U4",
+          "shape": []
+        },
+        "taxel_raw": {
+          "dtype": "int32",
+          "shape": [
+            1140,
+            3
+          ]
+        },
+        "taxel_valid_mask": {
+          "dtype": "bool",
+          "shape": [
+            1140
+          ]
+        },
+        "sensor_summary_raw": {
+          "dtype": "int32",
+          "shape": [
+            11,
+            3
+          ]
+        },
+        "packet_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "sample_valid": {
+          "dtype": "bool",
+          "shape": []
+        },
+        "query_begin_ns": {
+          "dtype": "int64",
+          "shape": []
+        }
+      },
+      "rows": 458,
+      "chunks": [
+        {
+          "file": "left_tactile_00000.npz",
+          "rows": 256,
+          "first_timestamp_ns": 681322709633764,
+          "last_timestamp_ns": 681351771708095,
+          "sha256": "a64b086f534d5b9e5c92c03ffa030bae95ec65cdbf7abd79691ac296059555af"
+        },
+        {
+          "file": "left_tactile_00001.npz",
+          "rows": 202,
+          "first_timestamp_ns": 681351881326585,
+          "last_timestamp_ns": 681373981864185,
+          "sha256": "3952fa43f4cd422203f6519efb5b934eff2a0322d7d95226d1b28640e6823c1a"
+        }
+      ]
+    }
+  },
+  "events_file": "events.jsonl",
+  "timestamp_contract": {
+    "timestamp_ns": "host monotonic receive/sample-completion time; not hardware sample time",
+    "xr_timestamp_ms": "Quest XR session clock; not directly comparable to host clock",
+    "synchronization": "raw streams retained independently; equal array indices are not synchronization"
+  },
+  "end_reason": "recording_paused",
+  "recording_error": null
+}

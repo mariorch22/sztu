@@ -1,0 +1,24 @@
+# Python environments, caches, and build artifacts
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+wheels/
+
+# Local configuration and generated files
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.mpl-cache/
+MUJOCO_LOG.TXT
+*.log
+.DS_Store
+Thumbs.db
