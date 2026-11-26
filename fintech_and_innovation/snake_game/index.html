@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211f26">
+  <title>Snake · Raster Arcade</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><i aria-hidden="true">▦</i> RASTER ARCADE</div>
+<nav aria-label="Spielversion"><a href="index.html" aria-current="page">Klassik</a><a href="levels.html">Leveltour</a></nav>
+    <button id="sound" aria-pressed="true">♫　 Ton an</button>
+  </header>
+  <main>
+    <section class="marquee">
+      <div class="stripes" aria-hidden="true"></div>
+      <h1 aria-label="Snake"><canvas id="titleArt" width="125" height="35" aria-hidden="true"></canvas></h1>
+      <div class="stripes" aria-hidden="true"></div>
+    </section>
+    <section class="console" aria-label="Spielautomat">
+      <div class="deck">
+        <div class="scores">
+          <div><small id="firstLabel">PUNKTE</small><strong id="score">000</strong></div>
+          <div><small id="secondLabel">REKORD</small><strong id="best">000</strong></div>
+        </div>
+        <label class="mode">SPIELMODUS
+          <select id="mode"><option value="solo">Solo</option><option value="duel">Duell · 2 Spieler</option></select>
+        </label>
+      </div>
+      <p id="duelHelp" hidden>Grün spielt mit WASD, Blau mit den Pfeiltasten. Wer zuerst kollidiert, verliert.</p>
+      <div class="bezel">
+        <div class="bar"><span><b id="lamp"></b><span id="status" role="status">Bereit</span></span><span id="speed">TEMPO 01</span></div>
+        <div class="screen"><canvas id="board" width="960" height="480" aria-label="Snake-Spielfeld"></canvas></div>
+      </div>
+      <div class="actions">
+        <button id="play">▶　 Spiel starten</button>
+        <div class="legend"><span><canvas id="appleIcon" width="30" height="30" aria-hidden="true"></canvas> Apfel +10</span><span title="Nach jedem dritten Apfel kurz verfügbar"><b>◆</b> Gold +30</span></div>
+      </div>
+    </section>
+    <div class="help"><span id="soloHelp"><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> oder <b>WASD</b> zum Steuern</span><span><kbd>Leertaste</kbd> Pause</span></div>
+    <p class="touch">Zum Steuern auf dem Spielfeld wischen.</p>
+  </main>
+</body>
+</html>
