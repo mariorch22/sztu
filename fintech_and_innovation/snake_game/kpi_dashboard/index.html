@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campaign report · Campus Analytics</title>
+  <link rel="stylesheet" href="styles.css"><script src="dashboard.js" defer></script>
+</head>
+<body>
+  <header><div class="shell top"><strong class="brand"><i class="mark" aria-hidden="true"><b></b><b></b><b></b></i> Campus Analytics</strong><span class="source">Mock data</span></div></header>
+  <main class="shell">
+    <section class="masthead"><div class="intro"><div><p class="kicker">Campaign report</p><h1 id="campaign">Campaign</h1><p id="period"></p></div></div><div class="waves" aria-hidden="true"></div></section>
+    <div class="toolbar"><h2>Performance overview</h2><div class="filters"><label>Period<select id="week"><option value="">All weeks</option></select></label><label>Channel<select id="channel"><option value="">All channels</option></select></label><button id="reset" hidden>Reset filters</button></div></div>
+    <p id="status" role="status">Loading campaign data…</p>
+    <div id="report" hidden>
+      <section class="metrics" aria-label="Key metrics">
+        <div><h2>Ad spend</h2><strong id="spend"></strong><small id="clicks"></small></div>
+        <div><h2>Accounts opened</h2><strong id="openings"></strong><small id="conversion"></small></div>
+        <div><h2>Cost per opening</h2><strong id="cost"></strong><small id="goal"></small></div>
+      </section>
+      <div class="charts">
+        <section class="panel card weekly"><div class="chart-head"><h2>Weekly performance</h2><div class="switch" role="group" aria-label="Weekly chart metric"><button data-metric="openings" aria-pressed="true">Openings</button><button data-metric="spend" aria-pressed="false">Spend</button></div></div>
+          <p>Select a week to explore its results.</p><div id="weekChart"></div><div id="legend" aria-label="Chart legend"></div>
+        </section>
+        <section class="panel card"><h2>Channel efficiency</h2><p>Select a channel to explore its cost per opening.</p><div id="costChart"></div><p id="insight"></p></section>
+      </div>
+      <section class="panel details"><h2>Campaign details</h2><div class="scroll" tabindex="0" role="region" aria-label="Campaign details by channel"><table><thead><tr><th>Channel</th><th>Spend</th><th>Clicks</th><th>Openings</th><th>Conversion rate</th><th>Cost per opening</th></tr></thead><tbody></tbody><tfoot></tfoot></table></div></section>
+    </div>
+  </main>
+<script type="application/json" id="offline-data">
+{
+  "campaign": "Campus Account",
+  "currency": "EUR",
+  "targetCostPerOpening": 25,
+  "weekly": [
+    { "weekStart": "2026-11-02", "channel": "Search", "spend": 400, "clicks": 320, "openings": 18 },
+    { "weekStart": "2026-11-02", "channel": "Social", "spend": 480, "clicks": 650, "openings": 12 },
+    { "weekStart": "2026-11-09", "channel": "Search", "spend": 480, "clicks": 410, "openings": 25 },
+    { "weekStart": "2026-11-09", "channel": "Social", "spend": 520, "clicks": 750, "openings": 15 },
+    { "weekStart": "2026-11-16", "channel": "Search", "spend": 560, "clicks": 520, "openings": 32 },
+    { "weekStart": "2026-11-16", "channel": "Social", "spend": 560, "clicks": 850, "openings": 18 }
+  ]
+}
+</script>
+</body></html>

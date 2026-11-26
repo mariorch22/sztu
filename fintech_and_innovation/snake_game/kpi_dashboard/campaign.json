@@ -1,0 +1,13 @@
+{
+  "campaign": "Campus Account",
+  "currency": "EUR",
+  "targetCostPerOpening": 25,
+  "weekly": [
+    { "weekStart": "2026-11-02", "channel": "Search", "spend": 400, "clicks": 320, "openings": 18 },
+    { "weekStart": "2026-11-02", "channel": "Social", "spend": 480, "clicks": 650, "openings": 12 },
+    { "weekStart": "2026-11-09", "channel": "Search", "spend": 480, "clicks": 410, "openings": 25 },
+    { "weekStart": "2026-11-09", "channel": "Social", "spend": 520, "clicks": 750, "openings": 15 },
+    { "weekStart": "2026-11-16", "channel": "Search", "spend": 560, "clicks": 520, "openings": 32 },
+    { "weekStart": "2026-11-16", "channel": "Social", "spend": 560, "clicks": 850, "openings": 18 }
+  ]
+}
